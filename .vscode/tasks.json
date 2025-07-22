@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ativ_03",
+            "type": "shell",
+            // O comando será o próprio bash.exe
+            "command": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "-c", // Isso diz ao bash para executar a próxima string como um comando
+                // O caminho para g++.exe agora está no formato Bash (com /c/ e barras normais)
+                // e toda a linha de compilação está entre aspas duplas para ser um único argumento
+                "\"/c/msys64/ucrt64/bin/g++.exe\" main.cpp Imovel.cpp Corretor.cpp Cliente.cpp Agendamento.cpp -o imobiliaria.exe -std=c++11 -g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Tarefa de compilação para a Atividade 03"
+        }
+    ]
+}
