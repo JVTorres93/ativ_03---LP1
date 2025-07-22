@@ -15,8 +15,7 @@
         },
         "Git Bash": {
             "source": "Git Bash"
-            // Não precisamos de configurações adicionais aqui se o Git Bash já funciona
-            // e está no seu PATH do sistema (o que geralmente acontece com a instalação padrão do Git)
+
         },
         "bash (MSYS2)": {
             "path": "C:\\msys64\\usr\\bin\\bash.exe",
@@ -28,11 +27,8 @@
                 "CHERE_INVOKING": "1"
             }
         }
-        // O perfil "MSYS2 MinGW UCRT64" explicitamente definido foi removido
-        // para evitar o conflito de inicialização.
     },
-    // Definir o perfil "Git Bash" como o padrão.
-    // Ele é mais confiável para integração com VS Code para ferramentas como make e gdb.
+
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "makefile.configureOnOpen": false
 }
